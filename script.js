@@ -9,7 +9,7 @@ async function fetchPhotos(date) {
     if (!response.ok) throw new Error("Failed to fetch photos");
 
     const data = await response.json();
-    return data.photos.slice(0, 3); // Return first three photos
+    return data.photos.slice(0, 3); 
   } catch (error) {
     console.error(error);
     displayError("Could not load Mars photos. Please try again.");
