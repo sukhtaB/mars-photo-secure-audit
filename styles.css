@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0606;
+  color: #eeb90a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8em;
+  color: #e5a308;
+}
+
+/* Form section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#date-input {
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#load-button {
+  padding: 8px 16px;
+  font-size: 1em;
+  color: rgb(15, 10, 10);
+  background-color: #eaa40c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#load-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+#error {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Photo gallery */
+#photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#photo-gallery figure {
+  width: 280px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#photo-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+#photo-gallery figcaption {
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+ /* Responsive */
+@media (max-width: 600px) {
+  #date-input, #load-button {
+    width: 100%;
+  }
+
+  #photo-gallery figure {
+    width: 90%;
+  }
+}
